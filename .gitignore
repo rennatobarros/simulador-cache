@@ -1,0 +1,15 @@
+# Created by https://www.gitignore.io/api/c++
+
+### C++ #
+
+# Executables
+*.exe
+
+# Ignora o build e o bin
+build/*
+bin/*
+
+# Ignora o diretório de documentação
+doc/*
+
+# End of https://www.gitignore.io/api/c++
