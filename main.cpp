@@ -1,7 +1,7 @@
-#include <iostream>
+#include "funcoes.h"
 
-int main(int argc, char const *argv[])
+int main(void)
 {
-	std::cout << "Teste!!! " << std::endl;
-	return 0;
+	//std::cout << "Teste!!! " << std::endl;
+	init();
 }
