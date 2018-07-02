@@ -4,7 +4,7 @@ void lerArquivo(int &t_bloco, int &linha, int &bloco, int &mapea, int &n_conj, i
 	string ler_linha;
 	int i = 0;
 
-	ifstream arquivo("config.txt");
+	ifstream arquivo("files/config.txt");
 
 	if (arquivo.bad()){
 		cout << "Erro!";
