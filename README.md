@@ -1,4 +1,10 @@
 # simulador-cache
+Simulador de memória cache utilizando c++ para a matéria IMD0041 da UFRN.
+
+## Componentes
+	Antonio Marcos de Oliveira
+	Emerson Irineu Freire de Lima
+	Renato Barros de Lima Freitas
 
 ## Utilização
 ```sh
