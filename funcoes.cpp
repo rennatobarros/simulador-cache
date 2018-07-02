@@ -101,9 +101,28 @@ void imprime(memoriaCache *c, memoriaPrincipal *m, int t_bloco, int bloco, int l
 	for (int i = 0; i < linha; ++i){
 		for (int j = 0; j < t_bloco; ++j){
 			vector<int> v = c[i].getEndereco();
-			vector<int> v2 = c[i].getEndereco();
+			vector<int> v2 = c[i].getConteudo();
 
-			cout << c[i].getLinha() << " - " << c[i].getBloco() << " - " << v[j] << " - " << v2[j];
+			if (c[i].getBloco() == -1 && v[j] == -1 && v2[j] == -1){
+				cout << c[i].getLinha() << " - " << "x" << " - " << "x" << " - " << "x";
+				cout << endl;
+			}else{
+				cout << c[i].getLinha() << " - " << c[i].getBloco() << " - " << v[j] << " - " << v2[j];
+				cout << endl;	
+			}
+			
+		}
+	}
+
+	cout << "\n\n\n";
+
+	cout << "Memória Principal" << endl;
+	cout << "Bloco - Endereco - Conteudo" << endl;
+	for(int i = 0; i < bloco; i++) {
+		for(int j = 0; j < t_bloco; j++) {
+			vector<int> v = m[i].getEndereco();
+			vector<int> v2 = m[i].getConteudo();
+			cout << m[i].getBloco() << " - " << v[j] << " - " << v2[j];
 			cout << endl;
 		}
 	}

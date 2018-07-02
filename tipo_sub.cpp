@@ -217,7 +217,7 @@ void parcial_aleatorio(memoriaCache *c, memoriaPrincipal *m, int linha, int bloc
 
 	int way = bloco_cache % n_conj;
 
-	cout << "\nVia: " << way << endl;
+	cout << "\nConjunto: " << way << endl;
 
 	for(int i = 0; i < n_conj ; i++) {
 		if(i == way) {
@@ -278,7 +278,7 @@ void parcial_fifo(memoriaCache *c, memoriaPrincipal *m, int linha, int bloco_cac
 
 	int way = bloco_cache % n_conj;
 
-	cout << "\nVia: " << way << endl;
+	cout << "\nConjunto: " << way << endl;
 
 	for(int i = 0; i < n_conj ; i++) {
 		if(i == way) {
@@ -360,7 +360,7 @@ void parcial_lfu(memoriaCache *c, memoriaPrincipal *m, int linha, int bloco_cach
 
 	int way = bloco_cache % n_conj;
 
-	cout << "\nVia: " << way << endl;
+	cout << "\nConjunto: " << way << endl;
 
 	for(int i = 0; i < n_conj ; i++) {
 		if(i == way) {
@@ -391,6 +391,7 @@ void parcial_lfu(memoriaCache *c, memoriaPrincipal *m, int linha, int bloco_cach
 			c[prox].setEndereco(m[bloco_cache].getEndereco());
 			c[prox].setConteudo(m[bloco_cache].getConteudo());
 			cout << "MISS => bloco alocado na linha " << prox << endl;
+
 			v[prox][0] = bloco_cache;
 			v[prox][1] = 1;
 
@@ -443,7 +444,7 @@ void parcial_lru(memoriaCache *c, memoriaPrincipal *m, int linha, int bloco_cach
 
 	int way = bloco_cache % n_conj;
 
-	cout << "\nVia: " << way << endl;
+	cout << "\nConjunto: " << way << endl;
 
 	for(int i = 0; i < n_conj ; i++) {
 		if(i == way) {
